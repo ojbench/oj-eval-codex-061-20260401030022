@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <iomanip>
+#include <string>
 #include "complex.hpp"
 
 using sjtu::complex;
@@ -6,22 +8,6 @@ using sjtu::complex;
 int main() {
   std::ios::sync_with_stdio(false);
   std::cin.tie(nullptr);
-
-  // Simple interactive driver to exercise operations.
-  // Format:
-  // First line: integer q, number of commands.
-  // Each command:
-  //   set a b         -> set current to (a,b)
-  //   add a b         -> current += (a,b)
-  //   sub a b         -> current -= (a,b)
-  //   mul a b         -> current *= (a,b)
-  //   div a b         -> current /= (a,b) (catch zero division)
-  //   neg             -> current = -current
-  //   conj            -> current = ~current
-  //   eq a b          -> print int(current == (a,b))
-  //   bool            -> print 0/1 for bool(current)
-  //   print           -> print current in required format
-  // This harness is for local testing; OJ may ignore runtime.
 
   int q;
   if (!(std::cin >> q)) {
@@ -77,4 +63,3 @@ int main() {
   }
   return 0;
 }
-
